@@ -4,10 +4,10 @@ LANGUAGE SQL
 AS
 $$
 BEGIN
-  IF (number_1 > number_2) THEN
-    RETURN number_1;
+  IF (number_12 > number_22) THEN
+    RETURN number_12;
   ELSE
-    RETURN number_2;
+    RETURN number_22;
   END IF;
 END;
 $$
