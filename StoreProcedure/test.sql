@@ -1,7 +1,12 @@
-
-CREATE OR REPLACE PROCEDURE Test.PUBLIC.output_message(message VARCHAR)
-RETURNS VARCHAR NOT NULL
+CREATE OR REPLACE PROCEDURE "PURGE_DATA"()
+RETURNS VARCHAR(16777216)
 LANGUAGE SQL
-AS
-BEGIN
-  RETURN message;
+EXECUTE AS OWNER
+AS '
+    DECLARE
+        message VARCHAR;
+    BEGIN
+        message := ''Idea Inactive employees data deleted successfully'';
+        RETURN message;
+    END;
+ ';
