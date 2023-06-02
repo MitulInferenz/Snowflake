@@ -4,7 +4,7 @@ LANGUAGE SQL
 AS
 $$
 BEGIN
-  IF (number_12 > number_22) THEN
+  IF (number_122 > number_222) THEN
     RETURN number_12;
   ELSE
     RETURN number_22;
